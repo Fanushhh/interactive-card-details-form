@@ -188,7 +188,7 @@ function App() {
           />
           <span className=" text-red-500 text-xs pt-2">{error.cardNumberError}</span>
         </div>
-        <div className="flex w-full gap-[10px] max-w-[327px]">
+        <div className="flex w-full gap-[10px] max-w-[327px] md:max-w-full">
           <div className="flex-col flex w-1/4">
             <label htmlFor="expMonth">exp. date</label>
             <input
