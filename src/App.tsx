@@ -182,7 +182,7 @@ function App() {
               setCard({ ...card, cardNumber: formattedCard });
             }}
             
-            type="string"
+            type="text"
             maxLength={19}
             placeholder="e.g. 1234 5678 9123 0000"
           />
@@ -198,7 +198,7 @@ function App() {
               onChange={(e) => setCard({ ...card, expMonth: e.target.value })}
               value={card.expMonth}
               className="w-full"
-              type="string"
+              type="text"
               maxLength={2}
               placeholder="MM"
             />
@@ -215,7 +215,7 @@ function App() {
                 setCard({ ...card, expYear: e.target.value });
               }}
               value={card.expYear}
-              type="string"
+              type="text"
               maxLength={2}
               placeholder="YY"
             />
@@ -229,7 +229,7 @@ function App() {
               value={card.cvc}
               onChange={(e) => setCard({ ...card, cvc: e.target.value })}
               className="w-full"
-              type="string"
+              type="text"
               maxLength={3}
               placeholder="e.g. 123"
             />
